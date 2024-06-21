@@ -61,6 +61,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t practice5:latest .
+        working-directory: ${{ github.workspace }}
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/practice5:latest
 #      - name: Build and push Docker image
