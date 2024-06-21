@@ -62,9 +62,7 @@ jobs:
       - name: Build Docker image
         run: docker build -t practice5:latest .
       - name: Push Docker image
-        run: |
-          docker tag myapp:latest ${{ secrets.DOCKER_USERNAME }}/practice5:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/practice5:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/practice5:latest
 #      - name: Build and push Docker image
 #        run: |
 #          docker build -t ${{ secrets.DOCKER_USERNAME }}/practice5:latest .
