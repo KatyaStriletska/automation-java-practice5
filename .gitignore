@@ -40,3 +40,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+.gitignore
+gradlew.bat
+gradlew
+.idea
